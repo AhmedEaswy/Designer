@@ -1,0 +1,160 @@
+/*start about*/
+section.about {
+	p {
+		margin-top:50px;
+		margin-bottom:0;
+	}
+}
+/*end about*/
+
+/*start clients*/
+.clients-title {
+	margin-top:100px;
+	margin-bottom:50px;
+}
+/*end clients*/
+
+/*start team*/
+.team {
+	margin-top:100px;
+	.head-underline {
+		margin-bottom:50px;
+	}
+	.team-slider {
+		background-image:url('../img/section-bg-c.jpeg');
+		height:500px;
+		.ourteam-slider {
+			list-style:none;
+			height: 300px;
+			margin-top:100px;
+			li.member {
+				float:$float-left;
+				img {
+					height:200px;
+					border-radius:50%;
+					border:5px solid #333;
+					margin:auto;
+				}
+				h3 {
+					color:#fff;
+					font-weight:bold;
+					margin:20px 0;
+				}
+				div {
+					color:$cColor;
+				}
+			}
+			.presentation {
+				float:none;
+			}
+		}
+	}
+}
+/*end clients*/
+
+/*start skills*/
+section.skills {
+	margin-top:100px;
+	overflow:hidden;
+	.head-underline {
+		margin-bottom:50px;
+	}
+	.content {
+		.text, .skills-percent {
+			width:49%;
+			float:$float-left;
+		}
+		.text {
+			margin-right:2%;
+			@media #{$minSmall} {
+				width:49%;
+				margin-right:2%;
+			}
+			@media #{$maxMobile} {
+				width:100%;
+				margin-right:0;
+			}
+			p:first-of-type {
+				margin-top:0;
+			}
+		}
+		.skills-percent {
+			@media #{$minSmall} {
+				width:49%;
+			}
+			@media #{$maxMobile} {
+				width:100%;
+			}
+			.skill-type {
+				position: relative;
+				margin-bottom:50px;
+				&:hover {
+					.percent-number {
+						opacity:1;
+					}
+				}
+				h3 {
+					margin-bottom:20px;
+				}
+				.p-line {
+					width:100%;
+					background-color:#333;
+					height:5px;
+					overflow:hidden;
+					.min-line {
+						height:100%;
+						background-color:$mainColor;
+					}
+				}
+				.percent-number {
+					padding:9px;
+					border-radius:10px;
+					position:absolute;
+					top:-10px;
+					background-color:$mainColor;
+					opacity:0;
+					transition:all .3s ease-in-out;
+					&:before {
+						content: '';
+						position: absolute;
+						height: 0;
+						width: 0;
+						border: 10px solid transparent;
+						border-top-color: $mainColor;
+						top: 35px;
+						left:calc(50% - 10px);
+					}
+					span {
+						color:#fff;
+						font-weight: bold;
+					}
+				}
+			}
+			.p90 {
+				.min-line {
+					width:90%;
+				}
+				.percent-number {
+					right:5.5%;
+				}
+			}
+			.p75 {
+				.min-line {
+					width:75%;
+				}
+				.percent-number {
+					right:20%;
+				}
+			}
+			.p70 {
+				.min-line {
+					width:70%;
+				}
+				.percent-number {
+					right:26%;
+				}
+			}
+		}
+	}
+}
+/*end skills*/

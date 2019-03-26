@@ -1,0 +1,65 @@
+/*start priices*/
+.prices-type {
+	margin-top:100px;
+	.head-underline {
+		margin-bottom:50px;
+	}
+}
+ul {
+	list-style:none;
+}
+/*end priices*/
+
+/*package component style start*/
+.package {
+	float:$float-left;
+	padding: 40px 20px;
+	text-align: center;
+	border:1px solid $bColor;
+	box-shadow: 0px 0 20px 5px #eee;
+	transition:all .5s ease-in-out;
+	margin:0 10px 40px;
+	height: fit-content;
+	&:hover {
+		box-shadow:none;
+		border-color:$mainColor;
+		hr {
+			border-color: $mainColor;
+		}
+	}
+	hr {
+		transition:all .3s ease-in-out;
+	}
+	h3 {
+		font-weight:bold;
+		font-size:50px;
+	}
+	.for {
+		margin:20px 0;
+		color:$cColor;
+		font-weight:bold;
+	}
+	.price {
+		font-weight:bold;
+		color:$bColor;
+		font-size:50px;
+		margin:20px 0;
+		span {
+			color:$cColor;
+			font-weight:bold;
+			font-size: 20px;
+		}
+	}
+	ul {
+		margin:20px 0 0;
+		padding:0;
+		list-style:none;
+		li {
+			margin-top: 20px;
+			color:$bColor;
+			font-weight:bold;
+			font-size:20px;
+		}
+	}
+}
+/*package component style end*/

@@ -1,0 +1,45 @@
+.scroller {
+	position: absolute;
+    bottom: 30px;
+    width: 100%;
+	.scroll {
+		height:40px;
+		padding: 3px;
+		width:fit-content;
+		margin:auto;
+		border:2px solid #fff;
+		border-radius:10px;
+		cursor: pointer;
+		&:hover {
+			&:before {
+				animation: move .7s linear infinite;
+			}
+		}
+		&:before {
+			content:'';
+			padding:5px;
+			height:0;
+			position: relative;
+			display:inline-block;
+			background-color: #fff;
+			border-radius: 50%;
+			transition:all .7s ease-in-out;
+		}
+	}
+	span {
+		color:#fff;
+		margin-top:10px;
+		display:inline-block;
+	}
+}
+@keyframes move {
+	0% {
+		top:0;
+	}
+	50% {
+		top:20px;
+	}
+	100% {
+		top:0;
+	}
+}

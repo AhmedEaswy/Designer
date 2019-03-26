@@ -1,0 +1,16 @@
+.blog-box {
+	width: 30%;
+	margin:0 3% 30px 0;
+	@media #{$minSmall} {
+		width:47%;
+	}
+	@media #{$minMedium} {
+		width:30%;
+	}
+	@media #{$minLarge} {
+		width:30%;
+	}
+	@media #{$maxMobile} {
+		width:100%;
+	}
+}

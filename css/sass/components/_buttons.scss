@@ -1,0 +1,16 @@
+.btn {
+	color:#fff;
+	padding: 10px 15px;
+	border-radius:5px;
+	border:1px solid $mainColor;
+	background-color:$mainColor;
+	text-transform:uppercase;
+	font-weight:bold;
+	cursor:pointer;
+	transition:all .3s ease-in-out;
+	text-decoration:none;
+	&:hover {
+		color:$mainColor;
+		background-color:#fff;
+	}
+}

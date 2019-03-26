@@ -1,0 +1,22 @@
+/*start works*/
+.works {
+	.works-slider {
+		img {
+			height: 100%;
+			margin:auto;
+			@media #{$minSmall} {
+				width:100%;
+			}
+			@media #{$minMedium} {
+				width:auto;
+			}
+			@media #{$maxMobile} {
+				width:100%;
+			}
+		}
+	}
+	.slick-track {
+		height: 500px;
+	}
+}
+/*end works*/

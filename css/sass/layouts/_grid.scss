@@ -1,0 +1,18 @@
+.container {
+    width:1170px;
+    margin:auto;
+    padding:0 15px;
+    position: relative;
+    @media #{$minSmall} {
+        width:720px;
+    }
+    @media #{$minMedium} {
+        width:960px;
+    }
+    @media #{$minLarge} {
+        width:1170px;
+    }
+	@media #{$maxMobile} {
+		width:100%;			
+	}
+}
